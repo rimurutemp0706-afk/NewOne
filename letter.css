@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins,sans-serif;
+}
+
+body{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    min-height:100vh;
+
+    background:linear-gradient(135deg,#ffe8ef,#fff7fb,#eef8ff);
+
+}
+
+.card{
+
+    width:750px;
+
+    background:white;
+
+    border-radius:30px;
+
+    padding:40px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.15);
+
+}
+
+.photo{
+
+    width:180px;
+    height:180px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    display:block;
+
+    margin:auto;
+
+    border:8px solid #ffd9e7;
+
+}
+
+h1{
+
+    margin:25px 0 35px;
+
+    text-align:center;
+
+    color:#ff5d8f;
+
+}
+
+.letter{
+
+    font-size:20px;
+
+    color:#555;
+
+    line-height:2;
+
+}
+
+.line{
+
+    opacity:0;
+
+    transform:translateX(-50px);
+
+    transition:.8s ease;
+
+}
+
+.line.show{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+.line1{
+    color:#5C4B51;       /* Warm charcoal */
+}
+
+.line2{
+    color:#A64D79;       /* Rose pink */
+}
+
+.line3{
+    color:#6B5B95;       /* Lavender purple */
+}
+
+.memory-caption{
+    margin:15px 0 25px;
+    font-size:1rem;
+    color:#888;
+    font-style:italic;
+}
+
+.ending{
+
+    margin-top:50px;
+
+    text-align:center;
+
+}
+
+.ending-image{
+
+    width:100%;
+
+    max-width:320px;
+
+    height:auto;
+
+    border-radius:20px;
+
+    margin-bottom:25px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+    transition:.35s ease;
+
+}
+
+.ending-image:hover{
+
+    transform:scale(1.03);
+
+}
+
+.ending h2{
+
+    font-size:2.5rem;
+
+    color:#444;
+
+    margin-bottom:20px;
+
+}
+
+.ending b{
+
+    display:block;
+
+    font-size:1.4rem;
+
+    color:#555;
+
+    margin-bottom:30px;
+
+}
+
+.ending h1{
+
+    color:#ff5d8f;
+
+    font-size:4rem;
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .ending-image{
+
+        max-width:240px;
+
+    }
+
+    .ending h2{
+
+        font-size:2rem;
+
+    }
+
+    .ending h1{
+
+        font-size:3rem;
+
+    }
+
+}
